@@ -2,7 +2,9 @@
 # http://www.py4e.com/code3/bs4.zip
 # and unzip it in the same directory as this file
 
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 from bs4 import BeautifulSoup
 import ssl
 
@@ -15,7 +17,7 @@ url = input('Enter - ')
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
-# Retrieve all of the anchor tags
+# Retrieve all of the anchor tags <a ... > to <\a>
 tags = soup('a')
 for tag in tags:
     print(tag.get('href', None))

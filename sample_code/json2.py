@@ -10,7 +10,7 @@ data = '''
     "x" : "7",
     "name" : "Brent"
   }
-]'''
+]'''  # dictionaries in a list
 
 info = json.loads(data)
 print('User count:', len(info))

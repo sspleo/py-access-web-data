@@ -21,4 +21,14 @@ print('User count:', len(lst))
 for item in lst:
     print('Name', item.find('name').text)
     print('Id', item.find('id').text)
-    print('Attribute', item.get('x'))
+    print('Attribute', item.get('x'))  # go find 'x' attribute
+
+# this is checking the nested structure
+'''
+print(" \n\n Let's look in to more in id elements")
+lst1 = stuff.findall('users/user/id')
+print('Id count:', len(lst1))
+
+for elmt in lst1:
+    print('ID :', elmt.text)
+'''

@@ -10,7 +10,7 @@ data = '''
    "email" : {
      "hide" : "yes"
    }
-}'''
+}'''  # this structure is like dictionaries in a dictionary.
 
 info = json.loads(data)
 print('Name:', info["name"])
